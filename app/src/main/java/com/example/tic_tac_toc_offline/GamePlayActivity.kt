@@ -54,13 +54,13 @@ class GamePlayActivity : AppCompatActivity() {
             buttonSelcted.isEnabled = true // making the button  clickable
             buttonSelcted.text = ""
             player1Score.text = "player1 :- $player1count"
-            player2Score.text = "plplayer2 :- $player2count"
+            player2Score.text = "player2 :- $player2count"
         }
     }
 
     fun buttonClick(view: View) {
         if (playTurn) {
-            var but = view as Button //make a view into button
+            val but = view as Button //make a view into button
             var cellId = 0
             when (but) {
                 button1 -> cellId = 1
